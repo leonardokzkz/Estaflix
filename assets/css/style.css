@@ -1,0 +1,188 @@
+/* Variáveis de cores */
+:root {
+    --azul-escuro: #002B36;
+    --vermelho: #E50914;
+    --branco: #FFFFFF;
+    --cinza: #CCCCCC;
+}
+
+/* Estilos gerais */
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#main-banner {
+    text-align: center;
+    font-weight: bolder;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex; 
+    
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: var(--branco);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo img {
+    height: 70px;
+}
+
+/* Nav's */
+
+nav {
+    flex-grow: 1;
+}
+
+
+
+/* Estilo dos botões */
+/* Search */
+
+
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: var(--cinza);
+}
+
+button{
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: large;
+}
+
+.btn-normal {
+    background: linear-gradient(to right, var(--azul-escuro) 50%, var(--vermelho) 50%);
+    -webkit-background-clip: text; /* Para navegadores WebKit */
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-right: 2%;
+    
+}
+
+
+.btn-novidades, .btn-pesquisa {
+    color: var(--branco);
+    border-radius: 10px;
+    border: 1px  var(--azul-escuro);
+}
+
+.btn-novidades {
+    background-color: var(--vermelho);
+}
+
+.btn-pesquisa {
+    background-color: var(--azul-escuro);
+}
+
+
+/* Estilos do banner principal */
+#main-banner {
+    color: var(--branco);
+    padding: 50px 0;
+}
+
+.actions button {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Corrousel */
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.slides {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    transition: transform 0.5s ease;
+    justify-content: center;
+}
+
+.slides li {
+    flex: 0 0 calc(80% / 3); /* Cada slide ocupa toda a largura do container */
+    max-width: calc(80% / 3); /* define a largura do slide */
+    
+}
+
+.slides li img {
+    width: 98%; 
+    height: 100%;
+}
+
+/* Estilos para os botões de navegação do carrossel*/
+.carousel-controls {
+    text-align: center;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+/* Estilo para o botão "anterior" */
+.carousel-controls .prev-slide {
+    float: left;
+}
+
+/* Estilo para o botão "próximo" */
+.carousel-controls .next-slide {
+    float: right;
+}
+
+.actions {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: var(--branco);
+    color: var(--branco);
+    padding: 20px 0;
+    text-align: center;
+}
