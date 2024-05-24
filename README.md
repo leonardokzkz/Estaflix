@@ -26,7 +26,7 @@ Estaflix é uma plataforma de streaming desenvolvida como um projeto estudantil,
 
 
 ## Estrutura do Projeto
-
+```plaintext
 Estaflix/
 │
 ├── assets/
@@ -39,8 +39,9 @@ Estaflix/
 │
 ├── index.html              # Página principal
 └── README.md               # Documento de descrição do projeto
+```
 
-Licença
+## Licença
 Este projeto é apenas para fins educacionais. Não há intenção de infringir quaisquer direitos autorais. O conteúdo é utilizado apenas para fins de aprendizagem e demonstração.
 
 Feito com ❤️ por Leonardo e colaboradores.
